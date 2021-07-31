@@ -1,0 +1,12 @@
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\murat\OneDrive\Masaüstü\MvcBlogProje\MvcProjeBlog\EntityLayer\obj\Debug\EntityLayer.pdb
