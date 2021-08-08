@@ -1,0 +1,41 @@
+﻿@model Cv_Asp.net.Models.Entity.Tbl_Egitim
+@{
+    ViewBag.Title = "EgitimDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Egitim Duzenle</h2>
+
+<br />
+
+<form method="post">
+    <br />
+    <br />
+
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.Basik, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Basik, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Alt Başlık")
+    @Html.TextBoxFor(x => x.AltBaslık, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alt Başlık2")
+    @Html.TextBoxFor(x => x.AltBaslık2, new { @class = "form-control" })
+    <br />
+    @Html.Label("GNO")
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.GNO, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+
+    <br />
+
+
+
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
+
+
+
