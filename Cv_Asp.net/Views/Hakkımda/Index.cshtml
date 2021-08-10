@@ -1,32 +1,45 @@
-﻿
+﻿@using Cv_Asp.net.Models.Entity
+@model List<Tbl_Hakkımda>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Hakkımda Menüsü</h2>
-<table class="table table-bordered">
-    <tr>
-        <th>ID</th>
-        <th>AD</th>
-        <th>ŞEHİR</th>
+<h2>Hakkımda GÜNCELLEME SAYFASI</h2>
+
+<form method="post">
+    @foreach (var item in Model)
+    {
+
+        <label>Ad</label>
+        <input type="text" name="Ad" value="@item.Ad" class="form-control" />
+        <br />
+        <label>Soyad</label>
+        <input type="text" name="SoyAd" value="@item.SoyAd" class="form-control" />
+        <br />
+        <label>Adres</label>
+        <input type="text" name="Adres" value="@item.Adres" class="form-control" />
+        <br />
+        <label>Telefon</label>
+        <input type="text" name="Telefon" value="@item.Telefon" class="form-control" />
+        <br />
+        <label>Mail</label>
+        <input type="text" name="Mail" value="@item.Mail" class="form-control" />
+        <br />
+        <label>Resim</label>
+        <input type="text" name="Resim" value="@item.Resim" class="form-control" />
+        <br />
+       
+        <br />
+        <label>Açıklama</label>
+
+        <textarea rows="5" class="form-control" name="Acıklama">@item.Acıklama</textarea>
 
 
+    }
+    <br />
 
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Murat</td>
-        <td>Elazığ</td>
+    <button class="btn btn-success">Güncelle</button>
+</form>
 
-
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Mert</td>
-        <td>Diyarbakır</td>
-
-
-    </tr>
-       </table>
 
