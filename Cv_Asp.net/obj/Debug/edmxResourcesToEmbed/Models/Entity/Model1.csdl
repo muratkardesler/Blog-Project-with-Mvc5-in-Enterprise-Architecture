@@ -68,6 +68,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Acıklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="Tarih" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="İkon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Tbl_Yetenek">
     <Key>
@@ -86,5 +87,16 @@
     <EntitySet Name="Tbl_İletisim" EntityType="Self.Tbl_İletisim" />
     <EntitySet Name="Tbl_Sertifikalar" EntityType="Self.Tbl_Sertifikalar" />
     <EntitySet Name="Tbl_Yetenek" EntityType="Self.Tbl_Yetenek" />
+    <EntitySet Name="Tbl_SosyalMeyda" EntityType="DbCvModel.Tbl_SosyalMeyda" />
   </EntityContainer>
+  <EntityType Name="Tbl_SosyalMeyda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="İkon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Durum" Type="Boolean" />
+  </EntityType>
 </Schema>

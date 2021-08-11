@@ -68,6 +68,17 @@
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Tarih" Type="varchar" MaxLength="30" />
     <Property Name="Acıklama" Type="varchar" MaxLength="250" />
+    <Property Name="İkon" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Tbl_SosyalMeyda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="varchar" MaxLength="30" />
+    <Property Name="Link" Type="varchar" MaxLength="50" />
+    <Property Name="İkon" Type="varchar" MaxLength="30" />
+    <Property Name="Durum" Type="bit" />
   </EntityType>
   <EntityType Name="Tbl_Yetenek">
     <Key>
@@ -85,6 +96,7 @@
     <EntitySet Name="Tbl_Hobiler" EntityType="Self.Tbl_Hobiler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tbl_İletisim" EntityType="Self.Tbl_İletisim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tbl_Sertifikalar" EntityType="Self.Tbl_Sertifikalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_SosyalMeyda" EntityType="Self.Tbl_SosyalMeyda" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tbl_Yetenek" EntityType="Self.Tbl_Yetenek" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

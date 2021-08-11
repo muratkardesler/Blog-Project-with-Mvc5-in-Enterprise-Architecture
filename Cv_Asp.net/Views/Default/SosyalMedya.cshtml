@@ -1,0 +1,10 @@
+﻿@using Cv_Asp.net.Models.Entity
+@model List<Tbl_SosyalMeyda>
+<div class="social-icons">
+    @foreach (var item in Model)
+    {
+        <a class="social-icon" href="@item.Link"><i class="@item.İkon"></i></a>
+    }
+
+
+</div>

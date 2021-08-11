@@ -73,6 +73,17 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Tarih" Type="varchar" MaxLength="30" />
           <Property Name="Acıklama" Type="varchar" MaxLength="250" />
+          <Property Name="İkon" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Tbl_SosyalMeyda">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="varchar" MaxLength="30" />
+          <Property Name="Link" Type="varchar" MaxLength="50" />
+          <Property Name="İkon" Type="varchar" MaxLength="30" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <EntityType Name="Tbl_Yetenek">
           <Key>
@@ -90,6 +101,7 @@
           <EntitySet Name="Tbl_Hobiler" EntityType="Self.Tbl_Hobiler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbl_İletisim" EntityType="Self.Tbl_İletisim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbl_Sertifikalar" EntityType="Self.Tbl_Sertifikalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_SosyalMeyda" EntityType="Self.Tbl_SosyalMeyda" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbl_Yetenek" EntityType="Self.Tbl_Yetenek" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -164,6 +176,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Acıklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Tarih" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="İkon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Tbl_Yetenek">
           <Key>
@@ -182,7 +195,18 @@
           <EntitySet Name="Tbl_İletisim" EntityType="Self.Tbl_İletisim" />
           <EntitySet Name="Tbl_Sertifikalar" EntityType="Self.Tbl_Sertifikalar" />
           <EntitySet Name="Tbl_Yetenek" EntityType="Self.Tbl_Yetenek" />
+          <EntitySet Name="Tbl_SosyalMeyda" EntityType="DbCvModel.Tbl_SosyalMeyda" />
         </EntityContainer>
+        <EntityType Name="Tbl_SosyalMeyda">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="İkon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Durum" Type="Boolean" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -259,6 +283,7 @@
           <EntitySetMapping Name="Tbl_Sertifikalar">
             <EntityTypeMapping TypeName="DbCvModel.Tbl_Sertifikalar">
               <MappingFragment StoreEntitySet="Tbl_Sertifikalar">
+                <ScalarProperty Name="İkon" ColumnName="İkon" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Acıklama" ColumnName="Acıklama" />
@@ -271,6 +296,17 @@
                 <ScalarProperty Name="Oran" ColumnName="Oran" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Yetenek" ColumnName="Yetenek" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_SosyalMeyda">
+            <EntityTypeMapping TypeName="DbCvModel.Tbl_SosyalMeyda">
+              <MappingFragment StoreEntitySet="Tbl_SosyalMeyda">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="İkon" ColumnName="İkon" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

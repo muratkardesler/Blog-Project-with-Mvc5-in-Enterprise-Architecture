@@ -16,6 +16,11 @@ namespace Cv_Asp.net.Controllers
             var degerler = db.Tbl_Hakkımda.ToList();
             return View(degerler);
         }
+        public PartialViewResult SosyalMedya()
+        {
+            var sosyalmedya = db.Tbl_SosyalMeyda.Where(x=>x.Durum==true).ToList();
+            return PartialView(sosyalmedya);
+        }
         public PartialViewResult Deneyim()
         {
             var deneyimler = db.Tbl_Deneyimler.ToList();

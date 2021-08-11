@@ -71,6 +71,7 @@
     <EntitySetMapping Name="Tbl_Sertifikalar">
       <EntityTypeMapping TypeName="DbCvModel.Tbl_Sertifikalar">
         <MappingFragment StoreEntitySet="Tbl_Sertifikalar">
+          <ScalarProperty Name="İkon" ColumnName="İkon" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Acıklama" ColumnName="Acıklama" />
@@ -83,6 +84,17 @@
           <ScalarProperty Name="Oran" ColumnName="Oran" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Yetenek" ColumnName="Yetenek" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_SosyalMeyda">
+      <EntityTypeMapping TypeName="DbCvModel.Tbl_SosyalMeyda">
+        <MappingFragment StoreEntitySet="Tbl_SosyalMeyda">
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="İkon" ColumnName="İkon" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

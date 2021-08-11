@@ -12,11 +12,12 @@ namespace Cv_Asp.net.Models.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class Tbl_Sertifikalar
+    public partial class Tbl_SosyalMeyda
     {
         public int ID { get; set; }
-        public string Acıklama { get; set; }
-        public string Tarih { get; set; }
+        public string Ad { get; set; }
+        public string Link { get; set; }
         public string İkon { get; set; }
+        public Nullable<bool> Durum { get; set; }
     }
 }
