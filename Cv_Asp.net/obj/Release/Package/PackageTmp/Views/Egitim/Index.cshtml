@@ -1,0 +1,41 @@
+﻿@using Cv_Asp.net.Models.Entity
+@model List<Tbl_Egitim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Alt Başlık</th>
+        <th>Alt Başlık2</th>
+        <th>GNO</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.ID</td>
+    <td>@item.Basik</td>
+    <td>@item.AltBaslık</td>
+    <td>@item.AltBaslık2</td>
+    <td>@item.GNO</td>
+    <td>@item.Tarih</td>
+    <td><a href="/Egitim/EgitimSil/@item.ID" class="btn btn-danger">Sil</a></td>    
+    <td><a href="/Egitim/EgitimDuzenle/@item.ID" class="btn btn-warning">Düzenle</a></td>
+
+</tr>
+    }
+</table>
+<a href="/Egitim/EgitimEkle/" class="btn btn btn-primary">Yeni Eğitim Bilgisi Ekle</a>
+
+
+

@@ -8,10 +8,12 @@ using System.Web.Mvc;
 
 namespace Cv_Asp.net.Controllers
 {
+    [Authorize]
     public class EgitimController : Controller
     {
         // GET: Egitim
         GenericRepository<Tbl_Egitim> repo = new GenericRepository<Tbl_Egitim>();
+         //sisteme erişim izni yoksa giremezsin
         public ActionResult Index()
         {
             var egitim = repo.List();

@@ -1,0 +1,12 @@
+﻿@using Cv_Asp.net.Models.Entity
+@model List<Tbl_Hobiler> 
+<div class="resume-section-content">
+    <h2 class="mb-5">HOBİLER</h2>
+    @foreach (var x in Model)
+    {
+
+        <p>@x.Acıklama1.</p>
+        <p class="mb-0">@x.Acıklama2.</p>
+    }
+
+</div>

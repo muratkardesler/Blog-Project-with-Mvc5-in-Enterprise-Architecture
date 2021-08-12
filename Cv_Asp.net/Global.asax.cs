@@ -12,6 +12,7 @@ namespace Cv_Asp.net
     {
         protected void Application_Start()
         {
+            GlobalFilters.Filters.Add(new AuthorizeAttribute());// bütün sayfalara authorize yapmak yerine tek yerden yaptık
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

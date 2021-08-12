@@ -1,0 +1,24 @@
+﻿@model Cv_Asp.net.Models.Entity.Tbl_Sertifikalar
+@{
+    ViewBag.Title = "YeniSertifika";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h4> Sertifika Ekleme Sayfası</h4>
+<form method="post">
+    <br />
+    <br />
+
+    @Html.Label("Yetenek Açıklaması")
+    @Html.TextBoxFor(x => x.Acıklama, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+    <br />
+
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
